@@ -1,0 +1,51 @@
+:root{
+    --cor-primaria:blue;
+    --cor-secundaria:rgb(119, 146, 236);
+    --cor-fundo:rgb(149, 213, 243);
+     --cor-texto:blue;
+    --cor-branca:rgb(119, 146, 236);
+
+    --fonte-principal:Arial,sans-serif;
+
+    --border-radius:10xp;
+    --sombra:0 04px 10px;
+}
+
+body{
+margin: 0;
+padding: 0;
+font-family: var(--fonte-principal);
+background-color: var(--cor-fundo);
+color: var(--cor-texto);
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+
+caixa{
+background-color: var(--cor-branca);    
+color: white;
+border: none;
+padding: 30px;
+border-radius: var(--border-radius);
+box-shadow: var(--sombra);
+text-align: center;
+width: 300px;
+}
+
+h1{
+   color: var(--cor-primaria);
+   color: white;
+   border: none;
+   padding: 10px 20px;
+   border-radius: var(--borda-radius);
+   cursor:pointer;
+
+}
+
+button:hover{
+blackground-color: var(cor --cor-secundaria)
+
+}
