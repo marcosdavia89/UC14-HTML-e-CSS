@@ -1,0 +1,104 @@
+/* =========================================
+   Reset Básico e Estilos Globais
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9; /* Fundo cinza claro para destacar os cards brancos */
+    padding: 50px 20px;
+}
+
+.titulo-secao {
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+/* =========================================
+   Container Principal (Flexbox)
+   ========================================= */
+.users-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards pulem para a próxima linha em telas menores */
+    justify-content: center; /* Centraliza os cards horizontalmente */
+    gap: 30px; /* Espaçamento entre os cards */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* =========================================
+   Estilização dos Cards
+   ========================================= */
+.card {
+    background-color: #ffffff; /* Fundo branco */
+    width: 260px; /* Largura fixa */
+    border-radius: 12px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 30px 20px;
+    text-align: center; /* Centraliza o conteúdo (texto) */
+    
+    /* Flexbox interno para organizar o card e empurrar o botão para baixo */
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+/* =========================================
+   Imagens e Textos
+   ========================================= */
+.foto-perfil {
+    width: 120px; /* Tamanho padronizado */
+    height: 120px;
+    border-radius: 50%; /* Torna a imagem perfeitamente redonda */
+    object-fit: cover; /* Evita que a imagem fique distorcida */
+    margin-bottom: 15px;
+    border: 3px solid #6c5ce7; /* Borda opcional para dar um destaque */
+}
+
+.nome {
+    font-size: 1.3rem;
+    color: #2d3436;
+    margin-bottom: 5px;
+}
+
+.cargo {
+    font-size: 0.9rem;
+    color: #6c5ce7; /* Cor temática */
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.descricao {
+    font-size: 0.9rem;
+    color: #636e72;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+/* =========================================
+   Botão
+   ========================================= */
+.btn-perfil {
+    background-color: #6c5ce7; /* Cor personalizada */
+    color: #ffffff;
+    border: none; /* Sem borda padrão */
+    padding: 10px 25px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: auto; /* Empurra o botão para o fundo do card, útil se a descrição for menor/maior */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efeito Hover do Botão */
+.btn-perfil:hover {
+    background-color: #5b4bc4; /* Escurece a cor no hover */
+    transform: translateY(-2px); /* Efeito suave de levantar o botão */
+}
